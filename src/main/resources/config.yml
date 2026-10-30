@@ -1,0 +1,37 @@
+menu:
+  titulo: "<gradient:#00FF3B:#52FF7A>Rompedor de Encantamientos</gradient>"
+  filas: 3
+  slot-item: 13
+  relleno: BLACK_STAINED_GLASS_PANE
+  info:
+    slot: 22
+    material: PAPER
+    nombre: "<#52FF7A>Coloca tu ítem en el centro"
+    lore:
+      - "<white>Se destruirá el ítem y recibirás"
+      - "<white>su versión limpia + todas sus runas."
+
+comandos:
+  # Placeholders: <jugador> <item>
+  item-limpio: "mm i give -s <jugador> <item>"
+  # Placeholders: <jugador> <encantamiento> <nivel>
+  runa: "ae givebook <jugador> <encantamiento> <nivel> 1 100 0"
+
+# Vacío = cualquier ítem de MythicMobs. Si pones IDs, solo esos se pueden romper.
+items-permitidos: []
+
+cooldown-ms: 500
+
+mensajes:
+  prefix: "<#00FF3B>ROMPEDOR <white>» "
+  sin-permiso: "<red>No tienes permiso."
+  solo-jugadores: "<red>Solo jugadores."
+  recargado: "<#52FF7A>Configuración recargada."
+  cantidad: "<red>Solo puedes romper un ítem a la vez."
+  no-mythic: "<red>Ese ítem no se puede romper."
+  no-permitido: "<red>Ese ítem no está permitido en el rompedor."
+  sin-encantamientos: "<red>Ese ítem no tiene encantamientos para romper."
+  sin-espacio: "<red>Necesitas <white><n></white> espacios libres en tu inventario."
+  cooldown: "<red>Espera un momento."
+  roto: "<#52FF7A>Ítem roto: recibiste su versión limpia y <white><n></white> runa(s)."
+  error: "<red>Ocurrió un error. Avisa a un administrador."

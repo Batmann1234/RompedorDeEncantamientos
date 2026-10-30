@@ -1,0 +1,14 @@
+name: RompedorEncantamientos
+main: net.valterion.rompedor.RompedorPlugin
+version: 1.0.0
+api-version: '1.21'
+depend: [MythicMobs, AdvancedEnchantments]
+commands:
+  rompedor:
+    description: Abre el rompedor de encantamientos
+    aliases: [romper]
+permissions:
+  rompedor.usar:
+    default: op
+  rompedor.admin:
+    default: op
